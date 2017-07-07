@@ -1,0 +1,690 @@
+2017-07-05 15:25:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 不明なデータ型: "ARCHER"
+Unknown data type: "ARCHER"; SQL statement:
+create table Product (
+ProductID int(3),
+ProductName archer(20),
+UnitPrice int(10),
+ShelfNo int(3),
+ProductClassID char(5)
+) [50004-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4161)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4004)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6102)
+	at org.h2.command.Parser.parseCreate(Parser.java:4343)
+	at org.h2.command.Parser.parsePrepared(Parser.java:365)
+	at org.h2.command.Parser.parse(Parser.java:320)
+	at org.h2.command.Parser.parse(Parser.java:292)
+	at org.h2.command.Parser.prepareCommand(Parser.java:257)
+	at org.h2.engine.Session.prepareLocal(Session.java:573)
+	at org.h2.engine.Session.prepareCommand(Session.java:514)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:177)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 15:26:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 不明なデータ型: "VARCHER"
+Unknown data type: "VARCHER"; SQL statement:
+create table Product (
+ProductID int(3),
+ProductName varcher(20),
+UnitPrice int(10),
+ShelfNo int(3),
+ProductClassID char(5)
+) [50004-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4161)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4004)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6102)
+	at org.h2.command.Parser.parseCreate(Parser.java:4343)
+	at org.h2.command.Parser.parsePrepared(Parser.java:365)
+	at org.h2.command.Parser.parse(Parser.java:320)
+	at org.h2.command.Parser.parse(Parser.java:292)
+	at org.h2.command.Parser.prepareCommand(Parser.java:257)
+	at org.h2.engine.Session.prepareLocal(Session.java:573)
+	at org.h2.engine.Session.prepareCommand(Session.java:514)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:177)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 15:28:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 不明なデータ型: "ARCHER"
+Unknown data type: "ARCHER"; SQL statement:
+create table ProductClass (
+ProductClassID char(5),
+ProductClassName archer(10)
+) [50004-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4161)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4004)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6102)
+	at org.h2.command.Parser.parseCreate(Parser.java:4343)
+	at org.h2.command.Parser.parsePrepared(Parser.java:365)
+	at org.h2.command.Parser.parse(Parser.java:320)
+	at org.h2.command.Parser.parse(Parser.java:292)
+	at org.h2.command.Parser.prepareCommand(Parser.java:257)
+	at org.h2.engine.Session.prepareLocal(Session.java:573)
+	at org.h2.engine.Session.prepareCommand(Session.java:514)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:177)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 15:28:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 不明なデータ型: "VARCHER"
+Unknown data type: "VARCHER"; SQL statement:
+create table ProductClass (
+ProductClassID char(5),
+ProductClassName varcher(10)
+) [50004-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4161)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4004)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6102)
+	at org.h2.command.Parser.parseCreate(Parser.java:4343)
+	at org.h2.command.Parser.parsePrepared(Parser.java:365)
+	at org.h2.command.Parser.parse(Parser.java:320)
+	at org.h2.command.Parser.parse(Parser.java:292)
+	at org.h2.command.Parser.prepareCommand(Parser.java:257)
+	at org.h2.engine.Session.prepareLocal(Session.java:573)
+	at org.h2.engine.Session.prepareCommand(Session.java:514)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:177)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 15:49:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CREATE TABLE PURCHASEORDERING DETAILS[*] (
+PURCHASEORDERNO INT(5),
+PRODUCTID INT(10),
+QTY INT(5),
+PRIMARY KEY(PURCHASEORDERNO),
+FOREIGN KEY(PRODUCTID) REFERENCES 
+PRODUCT(PRODUCTID)
+) "
+Syntax error in SQL statement "CREATE TABLE PURCHASEORDERING DETAILS[*] (
+PURCHASEORDERNO INT(5),
+PRODUCTID INT(10),
+QTY INT(5),
+PRIMARY KEY(PURCHASEORDERNO),
+FOREIGN KEY(PRODUCTID) REFERENCES 
+PRODUCT(PRODUCTID)
+) "; SQL statement:
+create table PurchaseOrdering Details (
+PurchaseOrderNo int(5),
+ProductID int(10),
+Qty int(5),
+PRIMARY KEY(PurchaseOrderNo),
+FOREIGN KEY(ProductID) REFERENCES 
+Product(ProductID)
+) [42000-195]
+2017-07-05 15:56:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CREATE TABLE LOG (
+OPERATIONID INT(3),
+PRODUCTID INT(10),
+OPERATIONDATE DATETIME,
+USERID CHAR(7),
+QTY INT(5),
+PRIMARY KEY(OPERATIONID),
+FOREIGN KEY(PRODUCTID) REFERENCES 
+PRODUCT(PRODUCTID)
+USER[*](USERID)
+) "; 期待されるステートメント "INDEX, ON, NOT, DEFERRABLE, NOCHECK, CHECK, ,, )"
+Syntax error in SQL statement "CREATE TABLE LOG (
+OPERATIONID INT(3),
+PRODUCTID INT(10),
+OPERATIONDATE DATETIME,
+USERID CHAR(7),
+QTY INT(5),
+PRIMARY KEY(OPERATIONID),
+FOREIGN KEY(PRODUCTID) REFERENCES 
+PRODUCT(PRODUCTID)
+USER[*](USERID)
+) "; expected "INDEX, ON, NOT, DEFERRABLE, NOCHECK, CHECK, ,, )"; SQL statement:
+create table Log (
+OperationID int(3),
+ProductID int(10),
+OperationDate datetime,
+UserID char(7),
+Qty int(5),
+PRIMARY KEY(OperationID),
+FOREIGN KEY(ProductID) REFERENCES 
+Product(ProductID)
+User(UserID)
+) [42001-195]
+2017-07-05 15:59:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CREATE TABLE LOG (
+OPERATIONID INT(3),
+PRODUCTID INT(10),
+OPERATIONDATE DATETIME,
+USERID CHAR(7),
+QTY INT(5),
+PRIMARY KEY(OPERATIONID),
+FOREIGN KEY(PRODUCTID) REFERENCES PRODUCT(PRODUCTID)
+FOREIGN[*] KEY(USERID) REFERENCES
+USER(USERID)
+) "; 期待されるステートメント "INDEX, ON, NOT, DEFERRABLE, NOCHECK, CHECK, ,, )"
+Syntax error in SQL statement "CREATE TABLE LOG (
+OPERATIONID INT(3),
+PRODUCTID INT(10),
+OPERATIONDATE DATETIME,
+USERID CHAR(7),
+QTY INT(5),
+PRIMARY KEY(OPERATIONID),
+FOREIGN KEY(PRODUCTID) REFERENCES PRODUCT(PRODUCTID)
+FOREIGN[*] KEY(USERID) REFERENCES
+USER(USERID)
+) "; expected "INDEX, ON, NOT, DEFERRABLE, NOCHECK, CHECK, ,, )"; SQL statement:
+create table Log (
+OperationID int(3),
+ProductID int(10),
+OperationDate datetime,
+UserID char(7),
+Qty int(5),
+PRIMARY KEY(OperationID),
+FOREIGN KEY(ProductID) REFERENCES Product(ProductID)
+Foreign key(UserID) References
+User(UserID)
+) [42001-195]
+2017-07-05 16:03:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "CREATE TABLE PURCHASEORDER (
+PURCHASEORDERNO INT(10),
+PURCHASEORDERDATE DATETIME),[*]
+PRIMARY KEY(PURCHASEORDERNO)
+) "
+Syntax error in SQL statement "CREATE TABLE PURCHASEORDER (
+PURCHASEORDERNO INT(10),
+PURCHASEORDERDATE DATETIME),[*]
+PRIMARY KEY(PURCHASEORDERNO)
+) "; SQL statement:
+create table PurchaseOrder (
+PurchaseOrderNo int(10),
+PurchaseOrderDate datetime),
+PRIMARY KEY(PurchaseOrderNo)
+) [42000-195]
+2017-07-05 16:06:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 不明なデータ型: "ARCHER"
+Unknown data type: "ARCHER"; SQL statement:
+create table Operation (
+OperationID int(10),
+OperationName archer(10),
+PRIMARY KEY(Operation)
+) [50004-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4161)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4004)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6102)
+	at org.h2.command.Parser.parseCreate(Parser.java:4343)
+	at org.h2.command.Parser.parsePrepared(Parser.java:365)
+	at org.h2.command.Parser.parse(Parser.java:320)
+	at org.h2.command.Parser.parse(Parser.java:292)
+	at org.h2.command.Parser.prepareCommand(Parser.java:257)
+	at org.h2.engine.Session.prepareLocal(Session.java:573)
+	at org.h2.engine.Session.prepareCommand(Session.java:514)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:177)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 16:07:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 不明なデータ型: "ARCHER"
+Unknown data type: "ARCHER"; SQL statement:
+create table Operation (
+OperationID int(10),
+OperationName archer(10),
+PRIMARY KEY(OperationID)
+) [50004-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4161)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4004)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6102)
+	at org.h2.command.Parser.parseCreate(Parser.java:4343)
+	at org.h2.command.Parser.parsePrepared(Parser.java:365)
+	at org.h2.command.Parser.parse(Parser.java:320)
+	at org.h2.command.Parser.parse(Parser.java:292)
+	at org.h2.command.Parser.prepareCommand(Parser.java:257)
+	at org.h2.engine.Session.prepareLocal(Session.java:573)
+	at org.h2.engine.Session.prepareCommand(Session.java:514)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:177)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 16:10:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "ALTER TABLE  PRODUCTSTOCK PRIMARY[*] KEY (PRODUCTID) "; 期待されるステートメント "., ADD, SET, RENAME, DROP, CHANGE, MODIFY, ALTER"
+Syntax error in SQL statement "ALTER TABLE  PRODUCTSTOCK PRIMARY[*] KEY (PRODUCTID) "; expected "., ADD, SET, RENAME, DROP, CHANGE, MODIFY, ALTER"; SQL statement:
+ALTER TABLE  ProductStock PRIMARY KEY (ProductID) [42001-195]
+2017-07-05 16:16:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 列 "PRODUCTID" にはnull値を許すべきてはありません
+Column "PRODUCTID" must not be nullable; SQL statement:
+ALTER TABLE  ProductStock ADD PRIMARY KEY (ProductID) [90023-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.mvstore.db.MVTable.addIndex(MVTable.java:477)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:147)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:77)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:101)
+	at org.h2.command.Command.executeUpdate(Command.java:260)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:193)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 16:17:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: インデックス "PRIMARY_KEY_" が見つかりません
+Index "PRIMARY_KEY_" not found; SQL statement:
+ALTER TABLE  ProductStock DROP PRIMARY KEY, ADD PRIMARY KEY (id) [42112-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getPrimaryKey(Table.java:771)
+	at org.h2.command.Parser.parseAlterTable(Parser.java:5650)
+	at org.h2.command.Parser.parseAlter(Parser.java:4961)
+	at org.h2.command.Parser.parsePrepared(Parser.java:347)
+	at org.h2.command.Parser.parse(Parser.java:320)
+	at org.h2.command.Parser.parse(Parser.java:292)
+	at org.h2.command.Parser.prepareCommand(Parser.java:257)
+	at org.h2.engine.Session.prepareLocal(Session.java:573)
+	at org.h2.engine.Session.prepareCommand(Session.java:514)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:177)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 16:17:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: インデックス "PRIMARY_KEY_" が見つかりません
+Index "PRIMARY_KEY_" not found; SQL statement:
+ALTER TABLE  ProductStock DROP PRIMARY KEY, ADD PRIMARY KEY (ProductID) [42112-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getPrimaryKey(Table.java:771)
+	at org.h2.command.Parser.parseAlterTable(Parser.java:5650)
+	at org.h2.command.Parser.parseAlter(Parser.java:4961)
+	at org.h2.command.Parser.parsePrepared(Parser.java:347)
+	at org.h2.command.Parser.parse(Parser.java:320)
+	at org.h2.command.Parser.parse(Parser.java:292)
+	at org.h2.command.Parser.prepareCommand(Parser.java:257)
+	at org.h2.engine.Session.prepareLocal(Session.java:573)
+	at org.h2.engine.Session.prepareCommand(Session.java:514)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:177)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 16:18:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 列 "PRODUCTID" にはnull値を許すべきてはありません
+Column "PRODUCTID" must not be nullable; SQL statement:
+ALTER TABLE  ProductStock  ADD PRIMARY KEY (ProductID) [90023-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.mvstore.db.MVTable.addIndex(MVTable.java:477)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:147)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:77)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:101)
+	at org.h2.command.Command.executeUpdate(Command.java:260)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:193)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 16:22:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "ALTER TABLE PRODUCTSTOCK ALTER COLUMN PRODUCTID SET NOT NULL,[*]
+ALTER TABLE PRODUCTSTOCK  ADD PRIMARY KEY (PRODUCTID) "
+Syntax error in SQL statement "ALTER TABLE PRODUCTSTOCK ALTER COLUMN PRODUCTID SET NOT NULL,[*]
+ALTER TABLE PRODUCTSTOCK  ADD PRIMARY KEY (PRODUCTID) "; SQL statement:
+ALTER TABLE ProductStock ALTER COLUMN ProductID SET NOT NULL,
+ALTER TABLE ProductStock  ADD PRIMARY KEY (ProductID) [42000-195]
+2017-07-05 16:27:32 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: 複数のプライマリキーを定義しようとしました
+Attempt to define a second primary key; SQL statement:
+ALTER TABLE productStock ADD PRIMARY KEY(ProductID) [90017-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:124)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:77)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:101)
+	at org.h2.command.Command.executeUpdate(Command.java:260)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:193)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 16:40:00 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: 複数のプライマリキーを定義しようとしました
+Attempt to define a second primary key; SQL statement:
+ALTER TABLE User ADD PRIMARY KEY(UserID) [90017-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:124)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:77)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:101)
+	at org.h2.command.Command.executeUpdate(Command.java:260)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:193)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-05 16:41:02 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: 複数のプライマリキーを定義しようとしました
+Attempt to define a second primary key; SQL statement:
+ALTER TABLE ProductClass ADD PRIMARY KEY(ProductClassID) [90017-195]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:124)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:77)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:101)
+	at org.h2.command.Command.executeUpdate(Command.java:260)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:193)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:165)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-07 10:36:29 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "INSERT INTO ([*]USERID, PASSWORD, USERNAME)
+VALUES (TEST, TEST,伊藤修平) "; 期待されるステートメント "identifier"
+Syntax error in SQL statement "INSERT INTO ([*]USERID, PASSWORD, USERNAME)
+VALUES (TEST, TEST,伊藤修平) "; expected "identifier"; SQL statement:
+Insert into (userID, password, username)
+values (test, test,伊藤修平) [42001-196]
+2017-07-07 10:37:02 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: 列 "TEST" が見つかりません
+Column "TEST" not found; SQL statement:
+Insert into user (userID, password, username)
+values (test, test,伊藤修平) [42122-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.command.dml.Insert.prepare(Insert.java:270)
+	at org.h2.command.Parser.prepareCommand(Parser.java:263)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-07 10:38:32 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: 列 "TEST" が見つかりません
+Column "TEST" not found; SQL statement:
+Insert into user(userID, password, username)
+values (test,1234,伊藤修平) [42122-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.command.dml.Insert.prepare(Insert.java:270)
+	at org.h2.command.Parser.prepareCommand(Parser.java:263)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-07 10:39:51 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "SELECT * FORM[*] USER "
+Syntax error in SQL statement "SELECT * FORM[*] USER "; SQL statement:
+select * form user [42000-196]
+2017-07-07 11:54:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 列 "OPERATIONID" が見つかりません
+Column "OPERATIONID" not found; SQL statement:
+Insert into user(operationID,operationname)
+values ('01','ユーザー追加') [42122-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:680)
+	at org.h2.command.Parser.parseColumn(Parser.java:887)
+	at org.h2.command.Parser.parseColumnList(Parser.java:871)
+	at org.h2.command.Parser.parseInsert(Parser.java:1071)
+	at org.h2.command.Parser.parsePrepared(Parser.java:417)
+	at org.h2.command.Parser.parse(Parser.java:321)
+	at org.h2.command.Parser.parse(Parser.java:293)
+	at org.h2.command.Parser.prepareCommand(Parser.java:258)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-07 11:54:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 列 "OPERATIONID" が見つかりません
+Column "OPERATIONID" not found; SQL statement:
+Insert into user(operationID,operationname)
+values ('02','ユーザー削除') [42122-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:680)
+	at org.h2.command.Parser.parseColumn(Parser.java:887)
+	at org.h2.command.Parser.parseColumnList(Parser.java:871)
+	at org.h2.command.Parser.parseInsert(Parser.java:1071)
+	at org.h2.command.Parser.parsePrepared(Parser.java:417)
+	at org.h2.command.Parser.parse(Parser.java:321)
+	at org.h2.command.Parser.parse(Parser.java:293)
+	at org.h2.command.Parser.prepareCommand(Parser.java:258)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-07 11:54:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 列 "OPERATIONID" が見つかりません
+Column "OPERATIONID" not found; SQL statement:
+Insert into user(operationID,operationname)
+values ('03','商品追加') [42122-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:680)
+	at org.h2.command.Parser.parseColumn(Parser.java:887)
+	at org.h2.command.Parser.parseColumnList(Parser.java:871)
+	at org.h2.command.Parser.parseInsert(Parser.java:1071)
+	at org.h2.command.Parser.parsePrepared(Parser.java:417)
+	at org.h2.command.Parser.parse(Parser.java:321)
+	at org.h2.command.Parser.parse(Parser.java:293)
+	at org.h2.command.Parser.prepareCommand(Parser.java:258)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-07 11:54:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 列 "OPERATIONID" が見つかりません
+Column "OPERATIONID" not found; SQL statement:
+Insert into user(operationID,operationname)
+values ('04','商品削除') [42122-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:680)
+	at org.h2.command.Parser.parseColumn(Parser.java:887)
+	at org.h2.command.Parser.parseColumnList(Parser.java:871)
+	at org.h2.command.Parser.parseInsert(Parser.java:1071)
+	at org.h2.command.Parser.parsePrepared(Parser.java:417)
+	at org.h2.command.Parser.parse(Parser.java:321)
+	at org.h2.command.Parser.parse(Parser.java:293)
+	at org.h2.command.Parser.prepareCommand(Parser.java:258)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-07 11:54:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 列 "OPERATIONID" が見つかりません
+Column "OPERATIONID" not found; SQL statement:
+Insert into user(operationID,operationname)
+values ('05','在庫追加') [42122-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:680)
+	at org.h2.command.Parser.parseColumn(Parser.java:887)
+	at org.h2.command.Parser.parseColumnList(Parser.java:871)
+	at org.h2.command.Parser.parseInsert(Parser.java:1071)
+	at org.h2.command.Parser.parsePrepared(Parser.java:417)
+	at org.h2.command.Parser.parse(Parser.java:321)
+	at org.h2.command.Parser.parse(Parser.java:293)
+	at org.h2.command.Parser.prepareCommand(Parser.java:258)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-07-07 11:54:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: 列 "OPERATIONID" が見つかりません
+Column "OPERATIONID" not found; SQL statement:
+Insert into user(operationID,operationname)
+values ('06','在庫削除') [42122-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:680)
+	at org.h2.command.Parser.parseColumn(Parser.java:887)
+	at org.h2.command.Parser.parseColumnList(Parser.java:871)
+	at org.h2.command.Parser.parseInsert(Parser.java:1071)
+	at org.h2.command.Parser.parsePrepared(Parser.java:417)
+	at org.h2.command.Parser.parse(Parser.java:321)
+	at org.h2.command.Parser.parse(Parser.java:293)
+	at org.h2.command.Parser.prepareCommand(Parser.java:258)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
