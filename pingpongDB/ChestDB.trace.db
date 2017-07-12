@@ -771,3 +771,28 @@ org.h2.jdbc.JdbcSQLException: テーブル "PRODUC" が見つかりません
 Table "PRODUC" not found; SQL statement:
 alter table PRODUCTSTOCK add FOREIGN KEY (ProductID)
 REFERENCES PRODUC (ProductID) [42102-196]
+2017-07-12 15:17:45 jdbc[4]: null
+org.h2.message.DbException: アプリケーションにより閉じられていない接続がガベージコレクトされました
+The connection was not closed by the application and is garbage collected [90018-196]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:185)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:127)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:100)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.login(WebApp.java:947)
+	at org.h2.server.web.WebApp.process(WebApp.java:210)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: アプリケーションにより閉じられていない接続がガベージコレクトされました
+The connection was not closed by the application and is garbage collected [90018-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 14 more
+2017-07-12 15:18:07 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: SQLステートメントに文法エラーがあります "INSERT INTO USER,[*]PERMISSION INT(1) "; 期待されるステートメント "., (, DIRECT, SORTED, DEFAULT, VALUES, SET, (, WITH, SELECT, FROM"
+Syntax error in SQL statement "INSERT INTO USER,[*]PERMISSION INT(1) "; expected "., (, DIRECT, SORTED, DEFAULT, VALUES, SET, (, WITH, SELECT, FROM"; SQL statement:
+insert into user,permission int(1) [42001-196]
