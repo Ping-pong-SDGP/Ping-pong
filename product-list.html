@@ -1,0 +1,66 @@
+<html lang="ja">
+<head>
+  <title>在庫管理一覧画面</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand">在庫管理システム</a>
+          </div>
+          <ul class="nav navbar-nav">
+              <li><a href="host.html">ホーム</a></li>
+              <li class="active"><a href="#">商品在庫一覧</a></li>
+              <li><a href="controled.html">操作履歴</a></li>
+          </ul>
+      <a class="btn-style" href="index.html"><button class="logout-btn">　ログアウト　</button></a>
+      </div>
+  </nav>
+  <div class="wrapper">
+
+      <br><br>
+      <div class="sort-area">
+        <form action="" method="" style="margin-bottom:-20px;">
+          <p style="font-size:20px;"><span class="fa fa-search" style="color:#3B5998;padding-right:5px;"></span>商品検索</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <input type="serch" name="product" placeholder="検索するキーワードを入力してください" class="form-control">
+            </div>
+            <div class="col-sm-1">
+              <button class="btn btn-primary">　検索　</button>
+            </div>
+          </div>
+        </form>
+        <p style="font-size:20px; padding-left:60px;"><span class="fa fa-sort" style="color:#3B5998;padding-right:5px;"></span>並べ替え</p><br><br>
+        <div class="row">
+            <button class="btn btn-primary sort-btn">　商品IDで並べ替え　</button>
+            <button class="btn btn-primary sort-btn">　商品名で並べ替え　</button>
+            <button class="btn btn-primary sort-btn">　商品数量で並べ替え　</button>
+            <button class="btn btn-primary sort-btn">　商品分類で並べ替え　</button>
+            <button class="btn btn-primary sort-btn">　棚番で並べ替え　</button>
+        </div>
+      </div>
+
+      <div class="product-list">
+        <table class="table table-hover">
+          <thead>
+            <tr><th>商品ID</th><th>商品名</th><th>数量</th><th>商品分類</th><th>棚番</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>aaa</td><td>aaa</td><td>aaa</td><td>aaa</td><td>aaa</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <br><br>
+
+  </div>
+
+
+
+</body>
+</html>
