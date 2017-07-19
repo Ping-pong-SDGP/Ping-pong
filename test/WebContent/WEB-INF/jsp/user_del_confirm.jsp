@@ -1,0 +1,74 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html lang="ja">
+<head>
+  <title>従業員の削除画面</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand">在庫管理システム</a>
+          </div>
+          <ul class="nav navbar-nav">
+              <li><a href="/LoginHome">ホーム</a></li>
+              <li class="active"><a href="#">商品在庫一覧</a></li>
+              <li><a href="controled.html">操作履歴</a></li>
+          </ul>
+      <a class="btn-style" href="index.html"><button class="logout-btn">　ログアウト　</button></a>
+      </div>
+  </nav>
+  <div class="wrapper">
+
+    <br><span style="padding-left:20px;">ホーム　＞　従業員の削除</span>
+
+      <br><br>
+      <div class="sort-area">
+        <form action="" method="" style="margin-bottom:-20px;">
+          <p style="font-size:20px;"><span class="fa fa-search" style="color:#3B5998;padding-right:5px;"></span>従業員検索</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <input type="serch" name="userDel" placeholder="検索するキーワードを入力してください" class="form-control">
+            </div>
+            <div class="col-sm-1">
+              <button class="btn btn-primary">　検索　</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="product-list">
+        <table class="table table-hover">
+          <thead>
+            <tr><th>従業員ID</th><th>従業員名</th><th></th></tr>
+          </thead>
+          <tbody>
+
+            <tr><td>aaa</td><td>aaa</td>
+              <td>
+
+                  <form action="delUser-confirm.html" method="" style="padding:0px;">
+                    <input type="submit" value="　削　除　" class="btn btn-danger">
+                    <input type="hidden" name="del_id" value="上のaaaと同じ値がいる">
+                    <input type="hidden" name="del_name" value="上のaaaと同じ値がいる">
+                  </form>
+
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <br><br>
+
+  </div>
+
+
+
+</body>
+</html>
