@@ -8,6 +8,7 @@
 </head>
 <body class="login">
 
+  <span class="logo-icon"><img src="img/stock-logo.png" width="150px" height="150px"></span>
   <div class="panel panel-default">
     <form action="/Ping-pong/Login" method="post">
       <div class="form-group">
